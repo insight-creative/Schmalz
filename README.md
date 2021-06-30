@@ -1,2 +1,3 @@
-# RPI
-WordPress website for RPI
+# Schmalz Landscaping
+
+WordPress website for Schmalz Landscaping
