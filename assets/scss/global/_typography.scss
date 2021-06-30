@@ -1,0 +1,175 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $brandColor;
+	font-family: $primaryFont;
+	font-size: 18px;
+	line-height: 1.4em;
+	@include breakpoint(sm) {
+		font-size: 20px;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $primaryFont;
+	font-weight: 700;
+	color: $brandColor;
+	line-height: 1.1em;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.heading-accent {
+	color: $black;
+	font-family: $secondaryFont;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0;
+	@include breakpoint(md) {
+		line-height: 1.5em;
+	}
+}
+p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+/* Font-scale of a major third */
+h1,
+.g1 {
+	font-size: 2em;
+	@include breakpoint(md) {
+		font-size: 3.053em;
+	}
+}
+h2,
+.g2 {
+	font-size: 1.6em;
+	@include breakpoint(md) {
+		font-size: 2.441em;
+	}
+}
+h3,
+.g3 {
+	font-size: 1.4em;
+	@include breakpoint(md) {
+		font-size: 1.953em;
+	}
+}
+h4,
+.g4 {
+	font-size: 1.2em;
+	@include breakpoint(md) {
+		font-size: 1.563em;
+	}
+}
+h5,
+.g5 {
+	font-size: 1em;
+	@include breakpoint(md) {
+		font-size: 1.25em;
+	}
+}
+h6,
+.g6 {
+	font-size: 1em;
+}
+/* Type Scale Gears*/
+.g7 {
+	font-size: 0.9em;
+}
+.g8 {
+	font-size: 0.8em;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-right {
+	text-align: right !important;
+}
+.text-center {
+	text-align: center !important;
+}
+@include breakpoint(sm) {
+	.text-left-s {
+		text-align: left !important;
+	}
+	.text-right-s {
+		text-align: right !important;
+	}
+	.text-center-s {
+		text-align: center !important;
+	}
+}
+@include breakpoint(md) {
+	.text-left-m {
+		text-align: left !important;
+	}
+	.text-right-m {
+		text-align: right !important;
+	}
+	.text-center-m {
+		text-align: center !important;
+	}
+}
+@include breakpoint(lg) {
+	.text-left-l {
+		text-align: left !important;
+	}
+	.text-right-l {
+		text-align: right !important;
+	}
+	.text-center-l {
+		text-align: center !important;
+	}
+}
+.i {
+	font-style: italic;
+}
+.b {
+	font-weight: bold;
+}
+.underline {
+	text-decoration: underline;
+}
+.strike {
+	text-decoration: line-through;
+}
+.shift-first {
+	text-transform: capitalize;
+}
+.shift-up {
+	text-transform: uppercase;
+}
+.fw4 {
+	font-weight: 400;
+}
+.fw5 {
+	font-weight: 500;
+}
+.fw6 {
+	font-weight: 600;
+}
+.fw7 {
+	font-weight: 700;
+}
+.fw8 {
+	font-weight: 800;
+}
+.fw9 {
+	font-weight: 900;
+}
+.text-white {
+	color: $white;
+}
+.no-margin {
+	margin: 0;
+}
+.text-80 {
+	max-width: 80ch;
+}

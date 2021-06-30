@@ -1,1 +1,2 @@
-# Schmalz
+# RPI
+WordPress website for RPI

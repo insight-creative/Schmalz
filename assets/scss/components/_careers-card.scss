@@ -1,0 +1,28 @@
+.careers-card {
+	padding: 2rem;
+	text-decoration: none;
+	color: $brandColor;
+	box-shadow: $shadow;
+	transition: 0.3s ease;
+	&__more {
+		display: flex;
+		align-items: center;
+		svg {
+			position: relative;
+			top: 2px;
+			width: 16px;
+			fill: $brandColor;
+			margin-left: 5px;
+			transition: 0.3s ease;
+		}
+	}
+	&:hover,
+	&:focus {
+		box-shadow: $shadowDark;
+		.careers-card__more {
+			svg {
+				transform: translateX(5px);
+			}
+		}
+	}
+}

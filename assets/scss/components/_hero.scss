@@ -1,0 +1,62 @@
+.hero {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 60vh;
+	transform: translateX(0);
+}
+.hero-filter {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.home .hero-filter {
+	filter: grayscale(1);
+}
+.hero-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-outer-wrap {
+	position: relative;
+	z-index: 2;
+	border: 3px solid $black;
+	margin: 0 1rem;
+	// transform: translateY(50px) scale(0.5);
+	// animation: fadeInScale 1s forwards;
+	.header-inner-wrap {
+		background: rgba(255, 255, 255, 0.7);
+		margin: 3px;
+		padding: 10px 40px;
+		overflow: hidden;
+	}
+}
+@keyframes fadeInScale {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+.title-wrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	&__inner {
+		padding: 1.25rem;
+		text-align: center;
+	}
+	&__title {
+		color: $white;
+	}
+}

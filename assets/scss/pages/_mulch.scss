@@ -1,0 +1,22 @@
+.mulch-images {
+	margin-top: 2rem;
+	margin-bottom: 0;
+	@include breakpoint(sm) {
+		flex-wrap: nowrap;
+	}
+	.wp-block-column {
+		padding: 0;
+	}
+	.wp-block-image {
+		margin: 0;
+	}
+	.wp-block-image img {
+		margin: 0 auto;
+	}
+	.wp-block-column:not(:first-child) {
+		margin-left: 0;
+	}
+	.wp-block-column:not(:only-child) {
+		flex-basis: 100%;
+	}
+}

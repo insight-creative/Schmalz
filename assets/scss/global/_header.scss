@@ -1,0 +1,239 @@
+.screen-reader-skip-to-content {
+	position: absolute;
+	height: auto;
+	width: auto;
+	display: block;
+	top: -150px;
+	background: $brandColor;
+	color: $white;
+	padding: 20px;
+	z-index: 9;
+	text-decoration: none;
+	a {
+		color: $white;
+	}
+	&:focus {
+		left: 6px;
+		top: 7px;
+	}
+}
+nav {
+	width: 100%;
+}
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	width: 100vw;
+	transition: 0.3s ease;
+	background-color: $white;
+	.container-wide {
+		padding-left: 0;
+		padding-right: 0;
+		@include breakpoint(lg) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+.masthead-inner-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.logo-wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 200px;
+	@include breakpoint(sm) {
+		max-width: 250px;
+	}
+	@include breakpoint(lg) {
+		max-width: 450px;
+	}
+}
+.site-navigation {
+	display: none;
+	@include breakpoint(lg) {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+#primary-mobile {
+	position: fixed;
+	top: 50px;
+	z-index: 2;
+	background: $white;
+	transform: translateY(-150%);
+	transition: 300ms ease-out all !important;
+	.main-menu li {
+		width: 90%;
+		margin: 0 auto;
+	}
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+.scroll-up {
+	transition: 0.3s ease;
+	transform: translateY(0);
+	@include breakpoint(md) {
+		transform: translateY(-200px);
+	}
+}
+.main-menu-wrapper {
+	display: none;
+	width: 100%;
+	@include breakpoint(lg) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	ul {
+		padding: 0;
+	}
+}
+.main-menu-wrapper-mobile {
+	width: 100%;
+	ul {
+		padding: 25px 0 10px 0;
+	}
+}
+.main-menu {
+	width: 100%;
+	margin: 0 auto;
+	li {
+		list-style-type: none;
+		border-bottom: 1px solid $lightGrey;
+		@include breakpoint(lg) {
+			border-bottom: none;
+		}
+	}
+	li:last-of-type {
+		border-bottom: none;
+	}
+	a {
+		position: relative;
+		font-family: $primaryFont;
+		font-weight: 700;
+		color: $brandColor;
+		padding: 10px;
+		font-size: 15px;
+		letter-spacing: 2.5px;
+		text-decoration: none;
+		transition: 0.2s ease;
+		display: inline-block;
+		opacity: 0;
+		transform: translateX(50px);
+		@include breakpoint(lg) {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		@include breakpoint(xl) {
+			padding: 10px 15px;
+			font-size: 20px;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background: $brandColor;
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+		}
+		&:hover,
+		&:focus {
+			color: $brandColor !important;
+			transition: 0.2s ease;
+			&:after {
+				transform: scaleX(1);
+			}
+		}
+		&:focus {
+			outline-color: $accentColor;
+		}
+	}
+	@include breakpoint(lg) {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		align-items: center;
+	}
+}
+#close-menu {
+	background-color: $brandColor;
+	color: $white;
+	padding: 10px;
+	width: 100%;
+	letter-spacing: 2.5px;
+	border: none;
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+#close {
+	margin: 0 10px;
+}
+.menu-link-wrap {
+	display: flex;
+	align-items: center;
+}
+.menu-text-wrap {
+	display: flex;
+	align-items: baseline;
+	margin-left: 10px;
+	right: 100px;
+}
+.nav-open {
+	transform: translateY(0) !important;
+	flex-direction: column;
+	color: $white;
+	transition: 300ms ease-out all !important;
+}
+.menu-button-wrap {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	cursor: pointer;
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+.sub-nav {
+	display: none;
+	background-color: $black;
+	@include breakpoint(lg) {
+		display: block;
+	}
+	nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.sub-nav-wrapper {
+	ul {
+		display: flex;
+		padding: 0;
+		li {
+			list-style-type: none;
+			padding: 10px;
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}

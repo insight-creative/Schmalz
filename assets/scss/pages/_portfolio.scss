@@ -1,0 +1,190 @@
+#portfolio-hero {
+	background-image: url("/assets/css/wp-content/themes/insightcustom/images/Doors-and-Frames-cropped.jpg");
+}
+.archive {
+	.fig {
+		max-width: 300px;
+		margin: 10px;
+		@include breakpoint(xl) {
+			max-width: 400px;
+		}
+	}
+}
+.portfolio-template-default {
+	#project-details {
+		.post-thumbnail {
+			display: none;
+		}
+	}
+}
+.gallery-container {
+	.gallery {
+		display: flex;
+		flex-direction: column;
+		@include breakpoint(md) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		figure {
+			margin: 10px;
+			max-width: 400px;
+			@include breakpoint(md) {
+				max-width: calc(90% / 3);
+			}
+		}
+	}
+}
+.nav-links-container {
+	.nav-links {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+		.nav-next,
+		.nav-previous {
+			width: 100%;
+			white-space: nowrap;
+			span {
+				display: none;
+				@include breakpoint(md) {
+					display: block;
+				}
+			}
+		}
+		.nav-previous {
+			a {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				&:after {
+					position: absolute;
+					height: 2px;
+					width: 20px;
+					content: "";
+					top: 48%;
+					left: 20px;
+					opacity: 0;
+					transition: 0.2s ease;
+					background-color: $lightGrey;
+				}
+				&:hover,
+				&:focus {
+					&:after {
+						left: 4px;
+						opacity: 1;
+						transition: 0.2s ease;
+					}
+					.chevron {
+						right: 15px;
+					}
+				}
+			}
+			svg {
+				position: relative;
+				right: 18px;
+			}
+		}
+		.nav-next {
+			a {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				&:after {
+					position: absolute;
+					height: 2px;
+					width: 20px;
+					content: "";
+					top: 48%;
+					right: 20px;
+					opacity: 0;
+					transition: 0.2s ease;
+					background-color: $lightGrey;
+				}
+				&:hover,
+				&:focus {
+					&:after {
+						right: 4px;
+						opacity: 1;
+						transition: 0.2s ease;
+					}
+					.chevron {
+						left: 15px;
+					}
+				}
+			}
+			svg {
+				position: relative;
+				left: 18px;
+			}
+		}
+	}
+	.nav-previous,
+	.nav-next {
+		font-size: 10px;
+		@include breakpoint(sm) {
+			font-size: 20px;
+		}
+		.arrow-right,
+		.arrow-left {
+			opacity: 0;
+		}
+		&:hover,
+		&:focus {
+			.arrow-right,
+			.arrow-left {
+				opacity: 1;
+			}
+		}
+		a {
+			position: relative;
+			color: $lightGrey;
+			text-decoration: none;
+			padding: 10px;
+			-webkit-transition: 0.3s ease all;
+			transition: 0.3s ease all;
+			&:hover,
+			&:focus {
+				-webkit-transition: 0.3s ease all;
+				transition: 0.3s ease all;
+			}
+		}
+	}
+	.nav-back {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		white-space: nowrap;
+		svg {
+			transition: transform 0.2s ease;
+		}
+		a {
+			color: $lightGrey;
+			text-decoration: none;
+			&:hover,
+			&:focus {
+				svg {
+					transform: scale(1.1);
+					transition: transform 0.2s ease;
+				}
+			}
+		}
+	}
+	.back {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		align-items: center;
+	}
+	svg {
+		width: 30px;
+		fill: $lightGrey;
+	}
+}

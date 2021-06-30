@@ -1,0 +1,29 @@
+.single-staff-container {
+	padding: 100px 1rem 0 1rem;
+	@include breakpoint(md) {
+		padding: 200px 1rem 0 1rem;
+	}
+	.w-60-m + .w-40-m {
+		@include breakpoint(md) {
+			margin-left: 2rem;
+		}
+		@include breakpoint(lg) {
+			margin-left: 4rem;
+		}
+	}
+}
+.staff-image-wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+	.staff-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
