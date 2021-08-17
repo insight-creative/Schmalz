@@ -9,8 +9,7 @@ get_header();
 ?>
 <?php get_template_part( '/template-parts/about-hero' ); ?>
 <div class="content-area">
-	<main class="site-main" role="main">
-		<a id="main-content" tabindex="-1"></a>
+    <main id="main-content" tabindex="-1" class="site-main" role="main">
 		<div class="main-content">
             <div class="bg-light padding-top-50 padding-bottom-200">
                 <div class="container">
@@ -49,65 +48,8 @@ get_header();
                 <h3>Architects and Designers</h3>
             </div>
             <div class="image-grid-container container">
-            <?php
-            $args = array(
-                'post_type'      => 'Staff',
-                'posts_per_page' => -1,
-                'order'          => 'ASC'
-            );
-
-            $staff = new WP_Query( $args );
-            if ( $staff->have_posts() ) : ?>
-                <?php while ( $staff->have_posts() ) : $staff->the_post(); ?>
-                <?php 
-                $featuredImage = get_the_post_thumbnail_url( get_the_ID(), 'medium' );
-                $img_id = get_post_thumbnail_id(get_the_ID());
-                $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true); 
-                ?>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="service-card">
-                    <div class="service-card__image-wrapper">
-                        <img src="<?php echo $featuredImage ?>" alt="<?php echo $alt_text ?>" class="service-card__image">
-                        <div class="service-card__view-gallery-overlay">
-                            <span>View Bio</span>
-                        </div>
-                    </div>
-                    <h3 class="text-center g6 service-card__title"><?php the_title(); ?></h3>
-                </a>
-                <?php endwhile; ?>
-            <?php endif; wp_reset_postdata(); ?>
+                <?php get_template_part('template-parts/staff-feed'); ?>
             </div>
-            <!-- <div class="container padding-top-50">
-                <h3>Foreman and Crew</h3>
-                <p>
-                Our talented and dedicated installation teams are experts in their respective areas and bring a close attention to detail to each job. With more than 10 crews, Schmalz is fully staffed to ensure your project is completed as quickly and efficiently as weather permits.
-                </p>
-                <h3>Garden Center Team</h3>
-                <p>
-                    Our Garden Center team is helpful, knowledgeable and sincere in their desire to help our customers maximize their efforts in their gardens. We are waiting to help you realize your outdoor dreams!
-                </p>
-
-                <h4>Andrew Johnson, Garden Center Manager</h4>
-                <p>
-                    Andrew has been gardening and landscaping since he was a child. Andrew is passionately dedicated to the outdoors and enjoys talking to people about their landscaping needs—especially when it comes to the vast variety of trees and shrubs that are currently offered at the Schmalz Garden Center.
-                </p>
-                <h4>Our entire Garden Center team is at your service all season long:</h4>
-                <p>Jim Lemmers, Assistant Manager – Lead Designer</p>
-
-                <p>Dana Siebers, Assistant Manager</p>
-
-                <p>Deb Goetz, Front End Lead/Customer Service</p>
-                <h3>Administrative Staff</h3>
-                <h4>Millie Schroeder, Perennial Manager</h4>
-                <p>
-                    Millie studied at NWTC and worked at Green Bay Botanical Gardens. She has been with Schmalz since 1993, serving as a perennial manager purchasing beautiful, healthy plants for landscape projects and for the retail Garden Center. From spring to fall she maintains supplies for both divisions of the business and takes pride in obtaining the most outstanding plants that will last an indefinite amount of time and offer years of enjoyment for Schmalz customers.
-                </p>
-                <h4>Jon King, Buyer</h4>
-                <p>
-                In his 22 years of working at Schmalz Jon has earned several promotions and has risen steadily through the ranks. Now, in his capacity as Green Goods Buyer, he places particular emphasis on sourcing an ever-growing list of new plants for our customers to feature in their unique landscapes, as well as finding new disease-resistant varieties of plants that promise to offer enjoyment for many years.
-                </p>
-                <h4>Donna Schmalz, Vice-President</h4>
-                <h4>Lee St. John, Accounting</h4>
-            </div> -->
 		</div>
         <?php get_template_part( '/template-parts/careers-cta' ); ?>
 	</main>

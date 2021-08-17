@@ -1,6 +1,7 @@
 .about-hero {
 	background-image: url("/wp-content/uploads/2021/04/schmalz-team.jpg");
 }
+
 .image-three-wide {
 	@include breakpoint(md) {
 		width: 95%;
@@ -8,6 +9,7 @@
 		transform: translateY(-50%);
 		margin: 0 auto -200px auto;
 	}
+	
 	img {
 		@include breakpoint(md) {
 			max-width: calc(100% / 3);

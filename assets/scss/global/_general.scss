@@ -2,16 +2,20 @@ html {
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	overflow-x: hidden;
 }
+
 .site-content {
 	margin-top: 40px;
+
 	@include breakpoint(lg) {
 		margin-top: 50px;
 	}
 }
+
 .screen-reader-text {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -25,6 +29,7 @@ body {
 	width: 1px;
 	word-wrap: normal !important;
 }
+
 // Style highlight to match our themes colors
 ::-moz-selection {
 	background: rgba(19, 114, 65, 0.5);

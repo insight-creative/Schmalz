@@ -8,10 +8,11 @@
 	padding: 1rem 2rem;
 	text-decoration: none;
 }
+
 .btn-primary,
 .btn-secondary,
 .wp-block-button__link {
-	&:after {
+	&::after {
 		content: "";
 		position: absolute;
 		top: -2px;
@@ -24,24 +25,30 @@
 		border: 2px solid #137241;
 	}
 }
+
 .btn-primary + .btn-primary {
 	margin-top: 1rem;
 }
+
 .btn-primary,
 .wp-block-button__link {
 	border: 2px solid $brandColor;
 	color: $white;
-	&:after {
+
+	&::after {
 		background-color: $brandColor;
 	}
+
 	&:hover,
 	&:focus {
 		color: $brandColor;
-		&:after {
+		
+		&::after {
 			transform: scaleX(0);
 		}
 	}
 }
+
 .wp-block-button__link {
 	border: 2px solid $brandColor;
 	color: $white;

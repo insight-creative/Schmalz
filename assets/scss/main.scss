@@ -11,7 +11,6 @@ Upshift CSS
 @import "global/background";
 @import "global/links";
 @import "global/buttons";
-@import "global/display";
 @import "global/flexbox";
 @import "global/footer";
 @import "global/general";
@@ -20,7 +19,6 @@ Upshift CSS
 @import "global/images";
 @import "global/lists";
 
-@import "libs/flickity";
 @import "libs/hamburger";
 
 @import "components/hero";
@@ -30,22 +28,19 @@ Upshift CSS
 @import "components/mulch-calculator";
 @import "components/contact-form";
 @import "components/careers-card";
+@import "components/skip-link";
 
 @import "wordpress/blocks/a-random-block";
 @import "wordpress/blocks/blocks";
 @import "wordpress/blocks/testimonials";
-@import "wordpress/blocks/hiring";
 @import "wordpress/blocks/cta";
 @import "wordpress/translation-widget";
 // Site pages
-@import "pages/portfolio";
 @import "pages/services";
 @import "pages/404";
-@import "pages/archive";
 @import "pages/default-template";
 @import "pages/contact";
 @import "pages/home";
-@import "pages/sitemap";
 @import "pages/careers";
 @import "pages/about";
 @import "pages/staff";

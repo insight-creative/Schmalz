@@ -10,11 +10,10 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-	<main class="site-main" role="main">
-		<a id="main-content" tabindex="-1"></a>
-		<div class="container padding-top-50 padding-bottom-50">
+	<main id="main-content" tabindex="-1" class="site-main" role="main">
+		<div class="container padding-top-50 padding-bottom-50 error-404">
 			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'insightcustom' ); ?></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Oops! It looks like that page hasn\'t been planted yet.', 'insightcustom' ); ?></h1>
 			</header><!-- .page-header -->
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Take a look at some of the links below or try a search to find what you are looking for? Contact us if the issue persists and you cannot find what you\'re looking for.', 'insightcustom' ); ?></p>

@@ -4,15 +4,18 @@ iframe {
 	max-width: 100%;
 	height: auto;
 }
+
 .image-wrap {
 	position: relative;
 }
+
 .cover-image,
 .background-image {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 .background-image {
 	position: absolute;
 	top: 0;
@@ -21,6 +24,7 @@ iframe {
 	width: 100%;
 	display: block;
 }
+
 .background-image img {
 	-o-object-fit: cover;
 	object-fit: cover;

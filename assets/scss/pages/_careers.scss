@@ -1,6 +1,13 @@
 .careers-hero {
 	background-image: url("/wp-content/uploads/2021/04/schmalz-workers-loading-truck-with-mulch.jpg");
 }
+
 .careers-container {
 	padding: 100px 0;
+}
+
+.single-careers {
+	.attachment-blogCover {
+		display: none;
+	}
 }

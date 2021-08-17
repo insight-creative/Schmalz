@@ -15,8 +15,7 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-	<main class="site-main" role="main" data-barba="container" data-barba-namespace="<?php echo the_title(); ?>-section">
-		<a id="main-content" tabindex="-1"></a>
+	<main id="main-content" tabindex="-1" class="site-main" role="main">
 		<div class="main-content">
 			<?php get_template_part( '/template-parts/hero' ); ?>
 			<?php

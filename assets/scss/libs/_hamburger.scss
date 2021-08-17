@@ -74,14 +74,17 @@
 .hamburger--arrow.is-active .hamburger-inner::after {
 	transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
+
 .hamburger--arrow.is-active .hamburger-inner {
-	&:before {
+	&::before {
 		top: -7px;
 	}
-	&:after {
+
+	&::after {
 		bottom: -6px;
 	}
 }
+
 /*
 * Arrow Alt
 */
@@ -109,10 +112,10 @@
 		transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 .hamburger--arrowalt.is-active .hamburger-inner {
-	&:before {
+	&::before {
 		top: 3px;
 	}
-	&:after {
+	&::after {
 		bottom: 4px;
 	}
 }

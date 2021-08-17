@@ -9,8 +9,7 @@ get_header();
 ?>
 <?php get_template_part( '/template-parts/careers-hero' ); ?>
 <div class="content-area">
-	<main class="site-main" role="main">
-		<a id="main-content" tabindex="-1"></a>
+    <main id="main-content" tabindex="-1" class="site-main" role="main">
 		<div class="main-content">
             <div class="careers-container">
                 <div class="container padding-bottom-50">

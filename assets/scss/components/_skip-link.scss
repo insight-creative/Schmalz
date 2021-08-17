@@ -1,0 +1,21 @@
+.screen-reader-skip-to-content {
+	position: absolute;
+	height: auto;
+	width: auto;
+	display: block;
+	top: -150px;
+	background: $brandColor;
+	color: $white;
+	padding: 20px;
+	z-index: 9;
+	text-decoration: none;
+
+	a {
+		color: $white;
+	}
+
+	&:focus {
+		left: 6px;
+		top: 7px;
+	}
+}

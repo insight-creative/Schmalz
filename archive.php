@@ -10,8 +10,7 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-	<main class="site-main" role="main">
-		<a id="main-content" tabindex="-1"></a>
+	<main id="main-content" tabindex="-1" class="site-main" role="main">
 		<?php get_template_part("/template-parts/hero"); ?>
 		<div class="container-wide flex flex-column flex-row-m padding-top-25 padding-bottom-25">
 			<div class="archive-content w-100 w-70-m flex flex-wrap">

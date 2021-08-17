@@ -1,32 +1,28 @@
 .site-footer {
-	position: relative;
-	z-index: 2;
 	width: 100%;
-	// margin: 150px auto 0;
-	margin: 75px 0 0 0;
-	height: 100%;
 	display: flex;
 	align-items: flex-end;
-	@include breakpoint(sm) {
-		margin: 150px auto 0;
-	}
-	@include breakpoint(lg) {
-		height: 75px;
-		margin: 250px auto 0;
-	}
-	@include breakpoint(xl) {
-		margin: 300px auto 0;
-	}
+
 	.footer-background,
 	.footer-foreground {
-		position: absolute;
-		top: 5px;
+		position: relative;
 		z-index: -1;
+		height: 100px;
+		top: -75px;
+
+		@include breakpoint(md) {
+			top: -50px;
+		}
+
 		@include breakpoint(lg) {
-			top: 10px;
-			left: -5px;
+			height: 300px;
+		}
+
+		@include breakpoint(xl) {
+			height: 500px;
 		}
 	}
+
 	.footer-background svg,
 	.footer-foreground svg {
 		width: 100vw;
@@ -34,44 +30,54 @@
 		bottom: 0;
 		left: 0;
 		margin: 0;
+
 		@include breakpoint(lg) {
 			width: 105vw;
 		}
 	}
+
 	p {
 		color: $white !important;
 	}
+
 	svg {
 		width: 16px;
 		fill: $white;
 		margin: 0 5px;
 		transition: 0.2s ease;
+
 		&:hover,
 		&:focus {
 			fill: $accentColor;
 			transition: 0.2s ease;
 		}
 	}
+
 	.footer-inner {
 		// position: relative;
 		text-align: center;
 		// top: 50px;
 		width: 100%;
 	}
+
 	#copyright {
-		font-size: 14px;
+		font-size: .85rem;
+
 		@include breakpoint(md) {
-			font-size: 20px;
+			font-size: 1.25rem;
 		}
+
 		p {
 			background-color: $brandColor;
 			margin: 0 auto;
 			padding: 25px 0;
 		}
+
 		a {
 			color: $accentColor;
 			transition: 0.2s ease;
 			text-decoration: none;
+			
 			&:hover,
 			&:focus {
 				color: $white;

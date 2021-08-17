@@ -1,65 +1,86 @@
 .intro {
 	flex-wrap: wrap;
+
 	@include breakpoint(lg) {
 		flex-wrap: nowrap;
 	}
+
 	.wp-block-column {
 		flex-basis: 100% !important;
 		margin: 0 auto !important;
 		max-width: 70ch;
+
 		@include breakpoint(lg) {
 			flex-basis: initial !important;
 		}
 	}
 }
+
 .wp-block-cover {
 	height: 60vh;
 	align-items: flex-end;
+
 	@include breakpoint(lg) {
 		height: 90vh;
 	}
 }
+
 .mulch-block {
 	height: auto;
 	align-items: center;
 	min-height: auto;
 	padding: 2rem auto;
+
 	h3 {
 		margin-bottom: 15px;
 	}
+
 	p {
 		margin-bottom: 20px;
 	}
+
 	@include breakpoint(lg) {
 		height: auto;
 	}
+
+	.wp-block-column {
+		flex-basis: 100% !important;
+	}
+
 	.wp-block-columns {
 		margin: 0;
 	}
+
 	.wp-block-buttons {
 		justify-content: center;
 	}
+
 	.wp-block-button__link {
 		color: $brandColor;
 		border: 2px solid $white;
 		border-radius: 0;
-		&:after {
+
+		&::after {
 			background-color: $white;
 			border: 2px solid $white;
 		}
+
 		&:hover,
 		&:focus {
 			color: $white;
 		}
 	}
 }
+
 .wp-block-column {
 	padding: 0 20px;
 }
+
 .flex-100 {
 	flex-basis: 100% !important;
 	margin-left: 0 !important;
 	flex-grow: 1 !important;
+	
 	@include breakpoint(lg) {
 		flex-basis: 60% !important;
 	}

@@ -14,6 +14,7 @@
 			'render_template'	=> 'template-parts/gutenblocks/a-random-assortment-of-buckets-block.php',
 			'category'			=> 'layout',
 			'icon'				=> '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M12.4 64c-3.2 0-6.1-1.3-8.5-3.5-4.8-4.8-4.8-12.5 0-17.1l13.6-13.9c2.1-2.1 5.6-2.1 7.5 0l9.6 9.6c2.1 2.1 2.1 5.3 0 7.5L20.9 60.5c-2.1 2.2-5.3 3.5-8.5 3.5zm8.8-30.7L7.6 47.2c-2.7 2.7-2.7 6.9 0 9.6 2.4 2.7 6.9 2.7 9.6 0l13.6-13.9-9.6-9.6z"/><path d="M25.7 41.1c-.8 0-1.3-.3-1.9-.8-1.1-1.1-1.1-2.7 0-3.7l24.8-25.1-.5-.3c-1.1-1.1-1.1-2.7 0-3.7l.3-.3-2.7-2.7c-1.1-1.1-1.1-2.7 0-3.7s2.7-1.1 3.7 0l13.3 13.3c1.1 1.1 1.1 2.7 0 3.7-1.1 1.1-2.7 1.1-3.7 0l-2.7-2.7-.3.3c-1.1 1.1-2.7 1.1-3.7 0l-.3-.3L27.3 40c-.2.8-.8 1.1-1.6 1.1z"/></svg>',
+			'enqueue_style'     => get_template_directory_uri() . '/template-parts/gutenblocks/css/random-block.css',
 		));
 	}
 
