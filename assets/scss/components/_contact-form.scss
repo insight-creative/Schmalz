@@ -1,32 +1,40 @@
 .form-wrapper {
 	box-shadow: $shadow;
 }
+
 .forminator-custom-form-733,
 .forminator-custom-form-811 {
 	.forminator-row:nth-of-type(2) {
 		margin-top: 20px;
+
 		@include breakpoint(md) {
 			margin-top: 50px;
 		}
 	}
+
 	.forminator-row {
 		padding: 0 20px;
+
 		@include breakpoint(md) {
 			padding: 0 50px;
 		}
 	}
+
 	.forminator-row > #address-1 .forminator-row,
 	.forminator-row > #address-2 .forminator-row,
 	.forminator-row > #address-3 .forminator-row {
 		padding: 0;
 	}
+
 	label {
 		font-size: 1.125em !important;
 	}
+
 	input,
 	textarea {
 		padding: 10px 0 !important;
 	}
+
 	.forminator-button-submit {
 		z-index: 1;
 		font-size: 0.9em !important;
@@ -36,7 +44,8 @@
 		border-radius: 0 !important;
 		background-color: transparent !important;
 		box-shadow: none !important;
-		&:after {
+
+		&::after {
 			content: "";
 			position: absolute;
 			background-color: $brandColor;
@@ -49,23 +58,28 @@
 			transition: 300ms ease-in-out;
 			border: 2px solid #137241;
 		}
+
 		&:hover,
 		&:focus {
 			color: $brandColor !important;
-			&:after {
+
+			&::after {
 				transform: scaleX(0);
 			}
 		}
 	}
 }
+
 .forminator-custom-form-733 {
 	.forminator-row:last-of-type {
 		margin-bottom: 20px !important;
+
 		@include breakpoint(md) {
 			margin-bottom: 50px !important;
 		}
 	}
 }
+
 .forminator-custom-form-811 {
 	.forminator-merge-tags {
 		p {
@@ -74,6 +88,7 @@
 		}
 	}
 }
+
 .forminator-custom-form-728 {
 	margin: 0 0 30px 0 !important;
 }

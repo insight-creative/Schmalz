@@ -18,9 +18,17 @@ a:not(.menu-item a):not(.service-card):not(.footer-copyright
 
 .external {
 	a {
+		display: flex !important;
+		flex-direction: row-reverse;
+		align-items: center;
+
 		&::before {
+			display: block;
 			content: "";
-			background-image: url("./images/external.svg");
+			background-image: url("../images/external.svg");
+			height: 16px;
+			width: 16px;
+			margin-left: 0.25rem;
 		}
 	}
 }

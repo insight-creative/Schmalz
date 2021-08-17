@@ -4,9 +4,11 @@
 	color: $brandColor;
 	box-shadow: $shadow;
 	transition: 0.3s ease;
+
 	&__more {
 		display: flex;
 		align-items: center;
+
 		svg {
 			position: relative;
 			top: 2px;
@@ -16,9 +18,11 @@
 			transition: 0.3s ease;
 		}
 	}
+
 	&:hover,
 	&:focus {
 		box-shadow: $shadowDark;
+
 		.careers-card__more {
 			svg {
 				transform: translateX(5px);

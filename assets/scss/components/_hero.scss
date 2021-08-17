@@ -8,14 +8,17 @@
 	height: 60vh;
 	transform: translateX(0);
 }
+
 .hero-filter {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 }
+
 .home .hero-filter {
 	filter: grayscale(1);
 }
+
 .hero-overlay {
 	position: absolute;
 	height: 100%;
@@ -25,6 +28,7 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .header-outer-wrap {
 	position: relative;
 	z-index: 2;
@@ -39,6 +43,7 @@
 		overflow: hidden;
 	}
 }
+
 @keyframes fadeInScale {
 	0% {
 		opacity: 0;
@@ -48,14 +53,17 @@
 		transform: translateY(0) scale(1);
 	}
 }
+
 .title-wrapper {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+
 	&__inner {
 		padding: 1.25rem;
 		text-align: center;
 	}
+
 	&__title {
 		color: $white;
 	}

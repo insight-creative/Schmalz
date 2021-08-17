@@ -1,20 +1,24 @@
 .service-card,
 .service-card-wide {
 	text-decoration: none;
+
 	&:hover,
 	&:focus {
 		.service-card__image {
 			transform: scale(1.1);
 		}
+
 		.service-card__view-gallery-overlay {
 			transform: translateY(0);
 		}
 	}
+
 	&__image-wrapper {
 		position: relative;
 		overflow: hidden;
 		min-height: 300px;
 	}
+
 	&__image {
 		position: absolute;
 		transition: 0.3s ease;
@@ -22,6 +26,7 @@
 		width: 100%;
 		object-fit: cover;
 	}
+
 	&__view-gallery-overlay {
 		position: absolute;
 		bottom: 0;
@@ -36,6 +41,7 @@
 		transition: 0.3s ease-out;
 	}
 }
+
 .service-card-wide {
 	&:hover,
 	&:focus {
@@ -43,12 +49,14 @@
 			transform: scale(1.05);
 		}
 	}
+
 	.service-card__image-wrapper {
 		position: relative;
 		overflow: hidden;
 		min-height: 200px;
 		max-height: 400px;
 	}
+
 	.service-card__image {
 		position: relative;
 		transition: 0.3s ease-in-out;
