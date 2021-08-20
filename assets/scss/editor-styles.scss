@@ -1,0 +1,17 @@
+@import "core/variables";
+@import "core/breakpoints";
+@import "core/layout";
+@import "global/flexbox";
+@import "global/buttons";
+
+.wp-block {
+	max-width: 90rem;
+}
+
+.interface-complementary-area {
+	width: 30rem;
+}
+
+@import "wordpress/blocks/blocks";
+@import "wordpress/blocks/a-random-block";
+@import "wordpress/blocks/testimonials";

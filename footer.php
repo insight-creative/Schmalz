@@ -6,22 +6,8 @@
 
 </div><!-- #content -->
 	<footer id="footer" class="site-footer" role="contentinfo">
-		<div class="footer-background" 
-		data-tilt 
-		data-tilt-full-page-listening
-		data-tilt-reverse="true"
-		data-tilt-max=".1" 
-		data-tilt-speed="250" 
-		data-tilt-perspective="500">
-			<?php get_template_part( '/app/svg-icons/footer-background' ); ?>
-		</div>
-		<div class="footer-foreground"
-		data-tilt 
-		data-tilt-full-page-listening
-		data-tilt-max=".1" 
-		data-tilt-speed="250" 
-		data-tilt-perspective="500">
-		<?php get_template_part( '/app/svg-icons/footer-foreground' ); ?>
+		<div class="footer-background">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-background-combined.png" alt="">
 		</div>
 		<div class="footer-inner">
 			<div id="copyright" class="center">

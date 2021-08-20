@@ -12,7 +12,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 	<!-- Preconnect to Google Analytics -->
 	<link rel="dns-prefetch" href="https://www.google-analytics.com">
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -20,6 +19,7 @@
 	<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
 	<link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
 	<link href="" rel="shortcut icon">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-10TNM4NLRK"></script>

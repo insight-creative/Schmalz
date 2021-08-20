@@ -22,6 +22,9 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 		 * to change 'insightcustom' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'insightcustom', get_template_directory() . '/languages' );
+		// Editor Styles
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'assets/css/editor-styles.css' );
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 		/*

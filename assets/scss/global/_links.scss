@@ -22,6 +22,7 @@ a:not(.menu-item a):not(.service-card):not(.footer-copyright
 		display: flex !important;
 		flex-direction: row-reverse;
 		align-items: center;
+		justify-content: flex-end;
 
 		&::before {
 			position: relative;
