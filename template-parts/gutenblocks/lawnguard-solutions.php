@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="text-center no-margin">Custom solutions</h2>
+  <h2 class="text-center no-margin">Custom Solutions</h2>
 </div>
 <div class="image-grid-container container-wide padding-bottom-50">
 
