@@ -15,18 +15,18 @@ module.exports = {
 	injectChanges: true,
 
 	// Style options.
-	styleSRC: "./assets/scss/main.scss", // Path to main .scss file.
-	styleDestination: "./assets/css/", // Path to place the compiled CSS file. Default set to root folder.
-	outputStyle: "compact", // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
-	errLogToConsole: true,
-	precision: 10,
-
-	// Style options.
-	// styleSRC: "./assets/scss/editor-styles.scss", // Path to main .scss file.
+	// styleSRC: "./assets/scss/main.scss", // Path to main .scss file.
 	// styleDestination: "./assets/css/", // Path to place the compiled CSS file. Default set to root folder.
 	// outputStyle: "compact", // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 	// errLogToConsole: true,
 	// precision: 10,
+
+	// Style options.
+	styleSRC: "./assets/scss/editor-styles.scss", // Path to main .scss file.
+	styleDestination: "./assets/css/", // Path to place the compiled CSS file. Default set to root folder.
+	outputStyle: "compact", // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
+	errLogToConsole: true,
+	precision: 10,
 
 	// JS Vendor options.
 	jsVendorSRC: "./assets/js/vendor/*.js", // Path to JS vendor folder.

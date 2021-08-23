@@ -1,0 +1,18 @@
+.lawn-guard-logo {
+  img {
+    max-width: 24rem;
+    margin: 0 auto;
+  }
+}
+
+.service-card--custom-solutions {
+  .service-card__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .service-card__view-gallery-overlay {
+    transform: translateY(0);
+  }
+}

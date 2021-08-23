@@ -17,7 +17,6 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main-content" tabindex="-1" class="site-main" role="main">
 		<div class="main-content">
-			<?php get_template_part( '/template-parts/hero' ); ?>
 			<?php
 			while ( have_posts() ) :
 				the_post();
