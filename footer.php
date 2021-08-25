@@ -20,14 +20,11 @@
 					);
 					?>
 					<?php bloginfo( 'name' ); ?> All Rights Reserved.<br>
-					<?php if(get_theme_mod('address')) { 
-						?>
+					<?php if(get_theme_mod('address')) { ?>
 						<a href="https://goo.gl/maps/f76JTCB4pNJ6MckN7" target="_blank" rel="noopener noreferrer">
-						<?php echo get_theme_mod( 'address' ); ?>
+							<?php echo get_theme_mod( 'address' ); ?>
 						</a>
-						<?php
-					} ?>
-					|
+					<?php } ?>
 					<?php if(get_theme_mod('phone')) { 
 						?>
 						<a href="tel:<?php echo get_theme_mod( 'phone' ); ?>">
